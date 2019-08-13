@@ -19,6 +19,6 @@ router.get('/', (req, res) => {
   res.json({status: '/mail server is running.'})
 })
 
-router.post('/', (req, res) => runAction(mailController.sendMails, req, res))
+router.post('/', (req, res) => runAction(mailController.sendMail, req, res))
 
 module.exports = router
